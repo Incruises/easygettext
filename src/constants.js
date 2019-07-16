@@ -2,6 +2,7 @@ exports.DEFAULT_ATTRIBUTES = [
   'get-text',
   'i18n',
   'translate',
+  'v-translate'
 ];
 
 exports.DEFAULT_FILTERS = [
