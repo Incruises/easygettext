@@ -12,6 +12,7 @@ exports.DEFAULT_FILTERS = [
 
 exports.DEFAULT_VUE_GETTEXT_FUNCTIONS = {
   '$gettext': ['msgid'],
+  'gettext': ['msgid'],
   '$ngettext': ['msgid', 'plural', null],
   '$pgettext': ['msgctxt', 'msgid'],
 };
