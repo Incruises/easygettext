@@ -481,8 +481,13 @@ exports.Extractor = class Extractor {
   }
 
   _extractTranslationData(filename, content) {
+    //Cheerio should only be used to extract HTML translations.
+    if (filename.indexOf('.js') > -1) {
+      return [];
+    }
+    
     const $ = cheerio.load(content, {
-      xmlMode: true,
+      xmlMode: false,
       decodeEntities: false,
       withStartIndices: true,
     });
