@@ -264,6 +264,8 @@ exports.Extractor = class Extractor {
     const jsContent = flowRemoveTypes(content).toString();
 
     const extractedStringsFromScript = jsExtractor.extractStringsFromJavascript(filename, jsContent);
+    
+    console.log(extractedStringsFromScript.length, ' strings.');
 
     this.processStrings(extractedStringsFromScript);
   }
