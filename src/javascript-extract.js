@@ -26,7 +26,7 @@ function getGettextEntriesFromScript(script) {
   const allTokens = [];
 
   const ACORN_OPTIONS = {
-    ecmaVersion: 10,
+    ecmaVersion: 'latest',
     sourceType: 'module',
     locations: true,
     onToken: allTokens,
